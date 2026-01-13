@@ -49,6 +49,13 @@ import "./App.css";
 function App() {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
+  const today = new Date();
+  const weekday = today.toLocaleDateString("en-US", { weekday: "long" });
+  const date = today.toLocaleDateString("en-US", { 
+    year: "numeric", 
+    month: "long", 
+    day: "numeric" 
+  });
 
   const addTask = () => {
     if (todo.trim() !== "") {
@@ -84,6 +91,8 @@ function App() {
         <div className="header">
           <h1>Task Tracker</h1>
           <p className="subtitle">Stay organized and get things done</p>
+          <p className="date-info">Whoop, it's {weekday} 🌝 ☕</p>
+          <p className="date-detail">{date}</p>
         </div>
 
         <div className="input-section">

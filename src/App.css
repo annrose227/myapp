@@ -63,6 +63,22 @@ body {
   color: #666;
   font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.date-info {
+  color: #667eea;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.date-detail {
+  color: #888;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .input-section {
